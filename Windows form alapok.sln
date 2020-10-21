@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows form alapok", "Windows form alapok\Windows form alapok.csproj", "{66810B0C-467F-48E4-B348-AAA10C33744C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66810B0C-467F-48E4-B348-AAA10C33744C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66810B0C-467F-48E4-B348-AAA10C33744C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66810B0C-467F-48E4-B348-AAA10C33744C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66810B0C-467F-48E4-B348-AAA10C33744C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2358258A-7C60-4B13-9E7C-761D67BB5A7E}
+	EndGlobalSection
+EndGlobal
