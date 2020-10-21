@@ -13,21 +13,33 @@ namespace Windows_form_alapok
 {
     public partial class hobbik : Form
     {
+        
         static List<string> hobbikLista = new List<string>();
         public hobbik()
         {
-            
+            InitializeComponent();
+            hobbiLista.Items.Add("Barkácsolás");
+            hobbiLista.Items.Add("Horgászat");
+            hobbiLista.Items.Add("Tánc");
         }
 
         private void hozzaAd_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < hobbikLista.Count; i++)
+            if (textBox3.Text.Equals(""))
             {
-                hobbikLista.Add("hobbikListaSzoveg.txt");
+
+            }
+            else if (textBox3.Text.Equals(" "))
+            {
+                textBox3.Text = "";
+            }
+            else
+            {
+                hobbiLista.Items.Add(textBox3.Text);
             }
         }
 
-        private void textBoxUjHobbi_KeyDown(object sender, KeyEventArgs e)
+            private void textBoxUjHobbi_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -84,7 +96,7 @@ namespace Windows_form_alapok
                     hobbiLista.Items.Clear();
 
                     textBoxNev.Text = sr.ReadLine();
-                    szulDatumPicker = sr.ReadLine(szulDatumPicker.Value.ToString());
+                   // szulDatumPicker = sr.ReadLine(szulDatumPicker.Value.ToString());
                     ferfi.Checked = bool.Parse(sr.ReadLine());
                     no.Checked = bool.Parse(sr.ReadLine());
 
@@ -99,6 +111,11 @@ namespace Windows_form_alapok
             {
                 MessageBox.Show("Nem jó a megnyitás, hiba");
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
